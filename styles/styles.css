@@ -1,3 +1,40 @@
+/*
+Error: Invalid CSS after "@import": expected file to import (string or url()), was ": "variables", ..."
+        on line 1 of ./styles.scss
 
+1: @import: "variables", "normalize.min";
 
-/*# sourceMappingURL=styles.css.map */
+Backtrace:
+./styles.scss:1
+/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:1165:in `expected'
+/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:1101:in `expected'
+/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:1081:in `expr!'
+/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:368:in `block in import_directive'
+/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:367:in `loop'
+/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:367:in `import_directive'
+/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:219:in `special_directive'
+/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:194:in `directive'
+/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:660:in `block_child'
+/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:650:in `block_contents'
+/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:117:in `stylesheet'
+/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:42:in `parse'
+/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/engine.rb:393:in `_to_tree'
+/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/listen-2.8.4/lib/listen/listener.rb:282:in `call'
+/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/listen-2.8.4/lib/listen/listener.rb:282:in `_process_changes'
+/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/listen-2.8.4/lib/listen/listener.rb:246:in `block in _wait_for_changes'
+/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/listen-2.8.4/lib/listen/listener.rb:229:in `loop'
+/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/listen-2.8.4/lib/listen/listener.rb:229:in `_wait_for_changes'
+/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/listen-2.8.4/lib/listen/listener.rb:318:in `block in _start_wait_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"@import\": expected file to import (string or url()), was \": \"variables\", ...\"\A         on line 1 of ./styles.scss\A \A 1: @import: \"variables\", \"normalize.min\";"; }
