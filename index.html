@@ -3,9 +3,45 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Brendon Seaton</title>
+    <link rel="stylesheet" href="../styles/styles.css" type="text/css">
+    <link rel="stylesheet" href="../superslides/dist/stylesheets/superslides.css" type="text/css">
+
   </head>
   <body>
+<!--     <base target="_blank">
+ -->    <!--START SLIDES-->
+    <div id="slides">
+      <div class="slides-container">
+        <img src="../superslides/examples/images/people.jpeg" alt="Cinelli">
+        <img src="../superslides/examples/images/surly.jpeg" width="1024" height="682" alt="Surly">
+        <img src="../superslides/examples/images/cinelli-front.jpeg" width="1024" height="683" alt="Cinelli">
+        <img src="../superslides/examples/images/affinity.jpeg" width="1024" height="685" alt="Affinity">
+      </div>
+
+      <nav class="slides-navigation">
+        <a href="#" class="next">Next</a>
+        <a href="#" class="prev">Previous</a>
+      </nav>
+    </div>
+    <!--END SLIDES-->
+
+    <div class="container">
+      <h1>Brendan Seaton</h1>
+      <p>This site is currently being re-made, but in the meantime you can follow me on <a href="http://twitter.com/brendanseaton">Twitter</a>, connect with me on <a href="https://www.linkedin.com/pub/brendan-seaton-cissp-cipp-c-crisc/14/858/301">LinkedIn</a>, or send me an <a href="mailto:brendan.seaton@rogers.com" target="_self">email</a> to get in touch.</p>
+      <!-- TODO:does he want his phone number here? -->
+      <p>
+    </div>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="../superslides/dist/jquery.superslides.min.js" type="text/javascript" charset="utf-8"></script>
+  <script>
+  $(document).ready(function() {
+    $('#slides').superslides({
+      animation: 'fade',
+      play: 5000,
+      animation_speed: 1500
+    });
+  });
+  </script>
 </html>

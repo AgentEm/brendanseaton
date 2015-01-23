@@ -1,40 +1,204 @@
-/*
-Error: Invalid CSS after "@import": expected file to import (string or url()), was ": "variables", ..."
-        on line 1 of ./styles.scss
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
 
-1: @import: "variables", "normalize.min";
+body {
+  margin: 0; }
 
-Backtrace:
-./styles.scss:1
-/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:1165:in `expected'
-/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:1101:in `expected'
-/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:1081:in `expr!'
-/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:368:in `block in import_directive'
-/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:367:in `loop'
-/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:367:in `import_directive'
-/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:219:in `special_directive'
-/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:194:in `directive'
-/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:660:in `block_child'
-/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:650:in `block_contents'
-/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:117:in `stylesheet'
-/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/scss/parser.rb:42:in `parse'
-/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/engine.rb:393:in `_to_tree'
-/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
-/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/sass-3.4.9/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/listen-2.8.4/lib/listen/listener.rb:282:in `call'
-/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/listen-2.8.4/lib/listen/listener.rb:282:in `_process_changes'
-/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/listen-2.8.4/lib/listen/listener.rb:246:in `block in _wait_for_changes'
-/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/listen-2.8.4/lib/listen/listener.rb:229:in `loop'
-/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/listen-2.8.4/lib/listen/listener.rb:229:in `_wait_for_changes'
-/Users/emilyporta/.rbenv/versions/2.1.1/lib/ruby/gems/2.1.0/gems/listen-2.8.4/lib/listen/listener.rb:318:in `block in _start_wait_thread'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"@import\": expected file to import (string or url()), was \": \"variables\", ...\"\A         on line 1 of ./styles.scss\A \A 1: @import: \"variables\", \"normalize.min\";"; }
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block; }
+
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden], template {
+  display: none; }
+
+a {
+  background: 0 0; }
+
+a:active, a:hover {
+  outline: 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: 700; }
+
+dfn {
+  font-style: italic; }
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+  padding: 0; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+pre {
+  overflow: auto; }
+
+code, kbd, pre, samp {
+  font-family: monospace,monospace;
+  font-size: 1em; }
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+button {
+  overflow: visible; }
+
+button, select {
+  text-transform: none; }
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+input {
+  line-height: normal; }
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  height: auto; }
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+legend {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto; }
+
+optgroup {
+  font-weight: 700; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td, th {
+  padding: 0; }
+
+html {
+  box-sizing: border-box;
+  /*   background: url(../images/bog.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */ }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body, input, button {
+  -webkit-font-smoothing: anitaliased; }
+
+h1, p {
+  line-height: 1.3;
+  text-align: center;
+  color: #fff;
+  font-weight: 300; }
+
+h1 {
+  font-family: Helvetica;
+  font-size: 4rem;
+  margin-bottom: 1rem; }
+  @media (min-width: 700px) {
+    h1 {
+      font-size: 6rem; } }
+
+p {
+  font-size: 1.2rem;
+  font-family: "Times New Roman"; }
+  @media (min-width: 700px) {
+    p {
+      font-size: 1.5rem; } }
+
+a {
+  text-decoration: none;
+  font-weight: 700; }
+  a:hover {
+    text-decoration: underline; }
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 2rem;
+  z-index: 3; }
+  @media (min-width: 400px) {
+    .container {
+      top: 40%;
+      -webkit-transform: translateY(-40%);
+      transform: translateY(-40%); } }
+
+/*# sourceMappingURL=styles.css.map */
