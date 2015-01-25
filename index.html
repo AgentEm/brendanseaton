@@ -3,25 +3,29 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Brendon Seaton</title>
+    <title>Brendan Seaton</title>
     <link rel="stylesheet" href="../styles/styles.css" type="text/css">
     <link rel="stylesheet" href="../superslides/dist/stylesheets/superslides.css" type="text/css">
-
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700|Muli' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../styles/flaticon/flaticon.css">
   </head>
   <body>
-<!--     <base target="_blank">
- -->    <!--START SLIDES-->
+  <base target="_blank">
+<!--START SLIDES-->
+ <!-- TODO: this slide stuff is all kind of a mess, clean up the files! -->
     <div id="slides">
       <div class="slides-container">
-        <img src="../superslides/examples/images/people.jpeg" alt="Cinelli">
-        <img src="../superslides/examples/images/surly.jpeg" width="1024" height="682" alt="Surly">
-        <img src="../superslides/examples/images/cinelli-front.jpeg" width="1024" height="683" alt="Cinelli">
-        <img src="../superslides/examples/images/affinity.jpeg" width="1024" height="685" alt="Affinity">
+        <img src="../images/eclipse.jpg" alt="">
+        <img src="../images/bog.jpg" width="1024" height="685" alt="">
+        <img src="../images/madonna.jpg" width="1024" height="682" alt="">
+        <img src="../images/stonehenge.jpg" width="1024" height="685" alt="">
+        <img src="../images/convent.jpg" width="1024" height="685" alt="">
+        <img src="../images/abbey.jpg" width="1024" height="685" alt="">
       </div>
 
       <nav class="slides-navigation">
-        <a href="#" class="next">Next</a>
-        <a href="#" class="prev">Previous</a>
+        <a href="#" class="next" target="_self"><i class="flaticon-right127"></i></a>
+        <a href="#" class="prev" target="_self"><i class="flaticon-back28"></i></a>
       </nav>
     </div>
     <!--END SLIDES-->
@@ -39,7 +43,7 @@
   $(document).ready(function() {
     $('#slides').superslides({
       animation: 'fade',
-      play: 5000,
+      play: 6000,
       animation_speed: 1500
     });
   });
