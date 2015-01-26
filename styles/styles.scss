@@ -75,9 +75,19 @@ nav.slides-navigation {
 
 nav.slides-pagination a {
   border: 2px solid $white !important;
+  text-indent: -1000%;
   &.current {
     background: $yellow !important;
   }
+}
+
+#slides {
+  min-height: 400px;
+}
+
+.slides-container img {
+  height: 100%;
+  width:100%;
 }
 
 .container {
@@ -87,7 +97,7 @@ nav.slides-pagination a {
   top: 0;
   left: 0;
   right: 0;
-  margin: 2rem auto 0;
+  margin: 0 auto;
   padding: 2rem;
   z-index: 3;
   top: 40%;
